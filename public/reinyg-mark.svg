@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#0A1420"/>
+  <circle cx="256" cy="256" r="154" stroke="#CAA55C" stroke-width="2" opacity=".8"/>
+  <text x="256" y="292" text-anchor="middle" fill="#F5F0E6" font-family="Georgia, serif" font-size="124">RY</text>
+  <text x="256" y="359" text-anchor="middle" fill="#CAA55C" font-family="Arial, sans-serif" font-size="26" letter-spacing="10">REINYG</text>
+</svg>
