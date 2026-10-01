@@ -4,7 +4,7 @@ const projects = [
     category: "Business Systems",
     title: "Centralized Processing Portal",
     description:
-      "A department-scale web platform designed to bring recurring requests, workflows, monitoring, approvals, reporting, and operational controls into one organized environment.",
+      "A department-scale web platform designed to organize recurring requests, workflows, monitoring, approvals, reporting, and operational controls in one environment.",
     tags: ["Web App", "Workflow", "PostgreSQL", "Automation"],
   },
   {
@@ -79,10 +79,32 @@ const stack = [
   "Process Mapping",
 ];
 
+const opportunities = [
+  {
+    label: "FOR COMPANIES",
+    title: "Technology & systems roles",
+    text: "Systems development, business analysis, process automation, internal tools, UAT, enterprise workflows, reporting, and digital transformation.",
+  },
+  {
+    label: "FOR CLIENTS",
+    title: "Practical automation projects",
+    text: "Web portals, dashboards, Google Workspace applications, Excel/VBA solutions, workflow automation, data validation, and custom internal tools.",
+  },
+];
+
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M5 12h14M13 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+function ExternalIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M14 5h5v5M19 5l-9 9" />
+      <path d="M19 13v6H5V5h6" />
     </svg>
   );
 }
@@ -111,9 +133,15 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#expertise">Expertise</a>
           <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <a className="header-cta" href="#contact">
-          Let&apos;s connect
+        <a
+          className="header-cta"
+          href="https://www.linkedin.com/in/reinniel-yalong-696978236/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
         </a>
       </header>
 
@@ -135,8 +163,13 @@ export default function Home() {
             <a className="button primary" href="#work">
               Explore my work <ArrowIcon />
             </a>
-            <a className="button secondary" href="#about">
-              About me
+            <a
+              className="button secondary"
+              href="https://www.linkedin.com/in/reinniel-yalong-696978236/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn <ExternalIcon />
             </a>
           </div>
           <div className="hero-meta">
@@ -145,8 +178,8 @@ export default function Home() {
               <strong>Business × Automation × Technology</strong>
             </div>
             <div>
-              <span className="meta-label">DOMAIN</span>
-              <strong>reinyg.dev</strong>
+              <span className="meta-label">STATUS</span>
+              <strong>Open to future roles & selected projects</strong>
             </div>
           </div>
         </div>
@@ -181,9 +214,8 @@ export default function Home() {
 
       <section className="section intro-strip">
         <p>
-          I don&apos;t automate for the sake of automation. I study how the work
-          actually happens, then design technology that is easier to use,
-          easier to control, and easier to improve.
+          I combine business understanding with hands-on development to turn
+          repetitive work and disconnected tools into structured digital systems.
         </p>
       </section>
 
@@ -221,6 +253,14 @@ export default function Home() {
             <div className="profile-row"><span>Specialty</span><strong>Automation & Systems</strong></div>
             <div className="profile-row"><span>Enterprise Tech</span><strong>Finacle 10.x / 11.x</strong></div>
             <div className="profile-row"><span>Approach</span><strong>Process-first</strong></div>
+            <div className="profile-links">
+              <a href="https://www.linkedin.com/in/reinniel-yalong-696978236/" target="_blank" rel="noreferrer">
+                LinkedIn <ExternalIcon />
+              </a>
+              <a href="https://github.com/ReinYG" target="_blank" rel="noreferrer">
+                GitHub <ExternalIcon />
+              </a>
+            </div>
           </aside>
         </div>
       </section>
@@ -311,9 +351,25 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section opportunity-section">
+        <div className="section-heading">
+          <span className="section-no">05 / OPPORTUNITIES</span>
+          <h2>Where I can contribute.</h2>
+        </div>
+        <div className="opportunity-grid">
+          {opportunities.map((item) => (
+            <article key={item.label}>
+              <span>{item.label}</span>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="section method-section">
         <div className="section-heading">
-          <span className="section-no">05 / METHOD</span>
+          <span className="section-no">06 / METHOD</span>
           <h2>My build process.</h2>
         </div>
         <div className="method-line">
@@ -335,16 +391,42 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div className="contact-inner">
-          <span className="section-no light">LET&apos;S WORK TOGETHER</span>
-          <h2>Have a process that should work better?</h2>
+          <span className="section-no light">LET&apos;S CONNECT</span>
+          <h2>Looking for someone who can bridge business and technology?</h2>
           <p>
             I&apos;m open to future technology roles, systems-development opportunities,
             automation projects, and selected client work.
           </p>
-          <div className="contact-note">
-            <span>reinyg.dev</span>
-            <small>Professional contact links can be connected before public launch.</small>
+          <div className="contact-links">
+            <a
+              className="contact-link primary-contact"
+              href="https://www.linkedin.com/in/reinniel-yalong-696978236/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>
+                <small>PROFESSIONAL PROFILE</small>
+                LinkedIn
+              </span>
+              <ExternalIcon />
+            </a>
+            <a
+              className="contact-link"
+              href="https://github.com/ReinYG"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>
+                <small>CODE & PROJECTS</small>
+                GitHub
+              </span>
+              <ExternalIcon />
+            </a>
           </div>
+          <p className="privacy-note">
+            Public portfolio content is intentionally sanitized and does not expose
+            confidential operational data, credentials, or proprietary business information.
+          </p>
         </div>
       </section>
 
