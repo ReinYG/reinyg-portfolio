@@ -1,3 +1,5 @@
+import PortfolioPrototype from "./components/PortfolioPrototype";
+
 const projects = [
   {
     no: "01",
@@ -101,29 +103,6 @@ function DeveloperPanel(){
   );
 }
 
-function Prototype({variant}:{variant:string}){
-  return (
-    <div className={`prototype prototype-${variant}`} aria-label="Sanitized prototype preview">
-      <div className="prototype-bar"><i/><i/><i/><span>Prototype Preview</span></div>
-      <div className="prototype-shell">
-        <aside>
-          <strong>REINYG</strong>
-          <span>Overview</span><span>Workflow</span><span>Records</span><span>Reports</span>
-        </aside>
-        <div className="prototype-main">
-          <div className="prototype-top"><div><small>DASHBOARD</small><b>Operations Overview</b></div><span className="status-pill">Active</span></div>
-          <div className="prototype-kpis"><div/><div/><div/></div>
-          <div className="prototype-content">
-            <div className="prototype-chart"><i/><i/><i/><i/><i/></div>
-            <div className="prototype-list"><span/><span/><span/><span/></div>
-          </div>
-        </div>
-      </div>
-      <small className="prototype-note">Representative interface — no production data shown</small>
-    </div>
-  );
-}
-
 export default function Home(){
   return (
     <main>
@@ -168,7 +147,7 @@ export default function Home(){
         <div className="project-grid">
           {projects.map((item)=>(
             <article className="project-card" key={item.no}>
-              <Prototype variant={item.variant}/>
+              <PortfolioPrototype variant={item.variant} compact/>
               <div className="project-copy">
                 <span className="work-no">{item.no} / {item.type}</span>
                 <h3>{item.title}</h3>
