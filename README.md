@@ -3,7 +3,7 @@
 Personal portfolio website for **Reinniel Exciya Yalong**.
 
 ## Version
-**v1.4 — Clickable software case studies**
+**v1.5 — Distinct software prototypes & deeper case studies**
 
 ## Direction
 The homepage now leads with a developer workflow visual instead of a portrait. The professional photo has been moved to the About section, while the main portfolio emphasizes systems development and automation.
@@ -16,7 +16,9 @@ The homepage now leads with a developer workflow visual instead of a portrait. T
 - Law Firm Operations Portal
 - Google & Excel Business Applications
 
-Each software item now links to a dedicated case study covering **Problem → What I Built → My Role → Technologies → Key Features → Prototype Screens**.
+Each software item links to a dedicated case study covering **Problem → What I Built → My Role → Technologies → Key Features → Prototype Screens**.
+
+Version 1.5 gives every project a purpose-built sanitized prototype instead of reusing one generic dashboard. Accounting shows operational queues and controls; audit shows engagement progress; registration shows stages and requirements; payroll shows workforce/payroll views; legal shows matter workflows; and automation shows spreadsheet, trigger, workflow-builder, and run-log concepts.
 
 All displayed interfaces are **sanitized portfolio prototypes**, not production screenshots. Internal organization names, confidential workflows, credentials, customer information, and production data are intentionally excluded.
 
