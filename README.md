@@ -3,7 +3,7 @@
 Personal portfolio website for **Reinniel Exciya Yalong**.
 
 ## Version
-**v1.3 — Software portfolio & privacy-safe prototypes**
+**v1.4 — Clickable software case studies**
 
 ## Direction
 The homepage now leads with a developer workflow visual instead of a portrait. The professional photo has been moved to the About section, while the main portfolio emphasizes systems development and automation.
@@ -15,6 +15,8 @@ The homepage now leads with a developer workflow visual instead of a portrait. T
 - Real-Time Payroll & Workforce System
 - Law Firm Operations Portal
 - Google & Excel Business Applications
+
+Each software item now links to a dedicated case study covering **Problem → What I Built → My Role → Technologies → Key Features → Prototype Screens**.
 
 All displayed interfaces are **sanitized portfolio prototypes**, not production screenshots. Internal organization names, confidential workflows, credentials, customer information, and production data are intentionally excluded.
 
