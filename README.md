@@ -1,6 +1,10 @@
-# REINYG.dev Portfolio
+# REINYG Portfolio
 
 Personal portfolio website for **Reinniel Exciya Yalong**.
+
+## Version
+
+**v1.1 — Professional profile & launch refinement**
 
 ## Positioning
 
@@ -8,13 +12,32 @@ Personal portfolio website for **Reinniel Exciya Yalong**.
 
 The public site highlights systems development, automation, spreadsheet engineering, web applications, business analysis, and Finacle expertise without exposing confidential banking information or internal operational data.
 
+## v1.1 highlights
+
+- Added LinkedIn integration
+- Added GitHub profile link
+- Added employer/client positioning
+- Added "Where I can contribute" section
+- Improved contact call-to-action
+- Updated SEO and social metadata to the active Vercel production URL
+- Preserved sanitized, confidentiality-conscious project descriptions
+
 ## Tech stack
 
-- Next.js 16.3.8 (Active LTS patch as of Sept. 30, 2026)
-- React 19.3
+- Next.js 16
+- React 19
 - TypeScript
-- Tailwind CSS 4.3
-- Vercel-ready
+- Tailwind CSS
+- Vercel
+
+## Live site
+
+https://reinyg-portfolio-8e4e.vercel.app
+
+## Professional links
+
+- LinkedIn: https://www.linkedin.com/in/reinniel-yalong-696978236/
+- GitHub: https://github.com/ReinYG
 
 ## Local development
 
@@ -23,34 +46,23 @@ npm install
 npm run dev
 ```
 
-Then open `http://localhost:3000`.
+For this workstation, REINYG can run on port 3001 to avoid a conflict with another local application:
+
+```bash
+npm run dev -- -p 3001
+```
 
 ## Production build
 
 ```bash
 npm run build
-npm run start
+npm run start -- -p 3001
 ```
 
-## Recommended deployment
+## Deployment
 
-1. Create a GitHub repository, e.g. `reinyg-dev-portfolio`.
-2. Push this project to the repository.
-3. In Vercel, choose **Add New → Project** and import the GitHub repository.
-4. Keep the default Next.js settings and deploy.
-5. Add `reinyg.dev` under **Project Settings → Domains** after the domain is registered.
-6. Vercel will show the DNS records to configure if the domain is registered elsewhere.
+The GitHub repository is connected to Vercel. Pushing to the `main` branch triggers a production deployment.
 
-## Before public launch
+## Public-content rule
 
-Replace or add:
-
-- Professional headshot (optional)
-- Contact email
-- LinkedIn URL
-- GitHub profile URL
-- Resume PDF
-- Sanitized screenshots / demo project images
-- Optional analytics
-
-Do **not** upload customer information, internal banking screenshots, credentials, production URLs, account numbers, internal reports, or proprietary data.
+Do **not** upload customer information, internal banking screenshots, credentials, production URLs, account numbers, internal reports, or proprietary data. Use sanitized descriptions, mock data, and portfolio-safe screenshots only.
