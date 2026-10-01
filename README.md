@@ -3,66 +3,21 @@
 Personal portfolio website for **Reinniel Exciya Yalong**.
 
 ## Version
+**v1.2 — Minimal developer portfolio redesign**
 
-**v1.1 — Professional profile & launch refinement**
+The visual direction is inspired by clean software-engineer portfolio layouts: simple navigation, a dark developer-focused hero, alternating project showcases, a light About section, compact skills, and a bold contact area. All copy and implementation are original to REINYG.
 
 ## Positioning
-
 **Systems • Automation • Technology**
 
-The public site highlights systems development, automation, spreadsheet engineering, web applications, business analysis, and Finacle expertise without exposing confidential banking information or internal operational data.
+The site highlights systems development, automation, Google Workspace applications, spreadsheet engineering, web development, business analysis, and Finacle expertise while intentionally keeping confidential banking information out of the public portfolio.
 
-## v1.1 highlights
-
-- Added LinkedIn integration
-- Added GitHub profile link
-- Added employer/client positioning
-- Added "Where I can contribute" section
-- Improved contact call-to-action
-- Updated SEO and social metadata to the active Vercel production URL
-- Preserved sanitized, confidentiality-conscious project descriptions
-
-## Tech stack
-
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS
-- Vercel
-
-## Live site
-
-https://reinyg-portfolio-8e4e.vercel.app
-
-## Professional links
-
+## Links
 - LinkedIn: https://www.linkedin.com/in/reinniel-yalong-696978236/
 - GitHub: https://github.com/ReinYG
 
 ## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-For this workstation, REINYG can run on port 3001 to avoid a conflict with another local application:
-
-```bash
-npm run dev -- -p 3001
-```
-
-## Production build
-
-```bash
-npm run build
-npm run start -- -p 3001
-```
+Run npm install, then npm run dev -- -p 3001.
 
 ## Deployment
-
-The GitHub repository is connected to Vercel. Pushing to the `main` branch triggers a production deployment.
-
-## Public-content rule
-
-Do **not** upload customer information, internal banking screenshots, credentials, production URLs, account numbers, internal reports, or proprietary data. Use sanitized descriptions, mock data, and portfolio-safe screenshots only.
+The repository is connected to Vercel. A push to main triggers a production deployment.
