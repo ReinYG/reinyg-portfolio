@@ -3,21 +3,30 @@
 Personal portfolio website for **Reinniel Exciya Yalong**.
 
 ## Version
-**v1.2 — Minimal developer portfolio redesign**
+**v1.3 — Software portfolio & privacy-safe prototypes**
 
-The visual direction is inspired by clean software-engineer portfolio layouts: simple navigation, a dark developer-focused hero, alternating project showcases, a light About section, compact skills, and a bold contact area. All copy and implementation are original to REINYG.
+## Direction
+The homepage now leads with a developer workflow visual instead of a portrait. The professional photo has been moved to the About section, while the main portfolio emphasizes systems development and automation.
+
+## Public software portfolio
+- Accounting Operations Portal
+- Audit Firm Management Portal
+- BIR Registration Workflow Portal
+- Real-Time Payroll & Workforce System
+- Law Firm Operations Portal
+- Google & Excel Business Applications
+
+All displayed interfaces are **sanitized portfolio prototypes**, not production screenshots. Internal organization names, confidential workflows, credentials, customer information, and production data are intentionally excluded.
 
 ## Positioning
 **Systems • Automation • Technology**
-
-The site highlights systems development, automation, Google Workspace applications, spreadsheet engineering, web development, business analysis, and Finacle expertise while intentionally keeping confidential banking information out of the public portfolio.
 
 ## Links
 - LinkedIn: https://www.linkedin.com/in/reinniel-yalong-696978236/
 - GitHub: https://github.com/ReinYG
 
 ## Local development
-Run npm install, then npm run dev -- -p 3001.
+Run `npm install`, then `npm run dev -- -p 3001`.
 
 ## Deployment
-The repository is connected to Vercel. A push to main triggers a production deployment.
+The GitHub repository is connected to Vercel. Pushing to `main` triggers a production deployment.
