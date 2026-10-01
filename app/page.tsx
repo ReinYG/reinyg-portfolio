@@ -174,6 +174,9 @@ export default function Home(){
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
                 <div className="tags">{item.tags.map(tag=><span key={tag}>{tag}</span>)}</div>
+                <a className="case-study-link" href={`/projects/${item.variant === "accounting" ? "accounting-operations-portal" : item.variant === "audit" ? "audit-firm-management-portal" : item.variant === "registration" ? "bir-registration-workflow-portal" : item.variant === "payroll" ? "real-time-payroll-workforce-system" : item.variant === "legal" ? "law-firm-operations-portal" : "google-excel-business-applications"}`}>
+                  View case study <Arrow/>
+                </a>
               </div>
             </article>
           ))}
