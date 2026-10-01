@@ -1,8 +1,58 @@
-const work = [
-  { no:"01", type:"Business Systems", title:"Centralized Processing Portal", description:"A department-scale portal that brings recurring requests, workflow routing, validation, status monitoring, reporting, and operational controls into one organized workspace.", tags:["Web Application","Workflow","Automation","Database"] },
-  { no:"02", type:"Professional Services", title:"Audit & Law Firm Portals", description:"Structured portals for client and matter records, documents, task monitoring, user roles, dashboards, and administrative workflows for professional-service teams.", tags:["Systems Design","RBAC","Dashboards","Records"] },
-  { no:"03", type:"Google Workspace", title:"Google Web Applications", description:"Browser-based business tools powered by Google Apps Script for submissions, validations, email automation, Drive integration, reporting, and data consolidation.", tags:["Apps Script","Sheets","Drive","JavaScript"] },
-  { no:"04", type:"Spreadsheet Engineering", title:"Excel Automation Systems", description:"Advanced Excel solutions that behave like lightweight business applications using VBA, structured formulas, controls, dashboards, file generation, and repeatable processing logic.", tags:["Excel","VBA","Automation","Reporting"] },
+const projects = [
+  {
+    no: "01",
+    type: "Accounting Technology",
+    title: "Accounting Operations Portal",
+    description:
+      "A centralized operations platform for recurring processing, workflow routing, validations, monitoring, reporting, user controls, and structured day-to-day administration.",
+    tags: ["Portal", "Workflow", "Automation", "PostgreSQL"],
+    variant: "accounting",
+  },
+  {
+    no: "02",
+    type: "Professional Services",
+    title: "Audit Firm Management Portal",
+    description:
+      "A business system for organizing client records, engagements, assignments, documents, activity monitoring, dashboards, and role-based access for an audit practice.",
+    tags: ["Client Registry", "RBAC", "Documents", "Dashboard"],
+    variant: "audit",
+  },
+  {
+    no: "03",
+    type: "Compliance Workflow",
+    title: "BIR Registration Workflow Portal",
+    description:
+      "A structured portal concept for registration, document preparation, stage tracking, attachments, workflow monitoring, and administrative visibility across a multi-step compliance process.",
+    tags: ["Next.js", "Supabase", "Workflow", "Documents"],
+    variant: "registration",
+  },
+  {
+    no: "04",
+    type: "Workforce Technology",
+    title: "Real-Time Payroll & Workforce System",
+    description:
+      "A payroll and workforce application concept focused on real-time calculations, employee records, attendance-linked processing, summaries, approvals, and management visibility.",
+    tags: ["Payroll", "Real-Time Data", "Dashboard", "Automation"],
+    variant: "payroll",
+  },
+  {
+    no: "05",
+    type: "Professional Services",
+    title: "Law Firm Operations Portal",
+    description:
+      "A centralized workspace for client and matter records, task tracking, document organization, workflow stages, user roles, and administrative oversight.",
+    tags: ["Case Records", "Tasks", "Documents", "RBAC"],
+    variant: "legal",
+  },
+  {
+    no: "06",
+    type: "Automation Toolkit",
+    title: "Google & Excel Business Applications",
+    description:
+      "A collection of web apps, automated workbooks, validation tools, reporting utilities, file-processing routines, and business automations built with Apps Script, Excel VBA, and related technologies.",
+    tags: ["Apps Script", "Excel VBA", "Google Workspace", "Automation"],
+    variant: "automation",
+  },
 ];
 
 const skills = [
@@ -35,6 +85,45 @@ function SkillIcon({type}:{type:string}){
   return <svg {...common}><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 9h4M7 13h7M16 9h1M16 13h1"/></svg>;
 }
 
+function DeveloperPanel(){
+  return (
+    <div className="developer-panel" aria-label="Animated development workflow illustration">
+      <div className="terminal-head"><span className="dots"><i/><i/><i/></span><span>reinyg / build.ts</span></div>
+      <div className="terminal-body">
+        <p><b>01</b><span>understand</span><em>(process)</em><i>✓</i></p>
+        <p><b>02</b><span>simplify</span><em>(workflow)</em><i>✓</i></p>
+        <p><b>03</b><span>automate</span><em>(repetition)</em><i>✓</i></p>
+        <p className="active"><b>04</b><span>build</span><em>(system)</em><i className="cursor">▍</i></p>
+        <p><b>05</b><span>improve</span><em>(experience)</em><i>→</i></p>
+      </div>
+      <div className="terminal-status"><span><i/> workflow ready</span><span>v1.3</span></div>
+    </div>
+  );
+}
+
+function Prototype({variant}:{variant:string}){
+  return (
+    <div className={`prototype prototype-${variant}`} aria-label="Sanitized prototype preview">
+      <div className="prototype-bar"><i/><i/><i/><span>Prototype Preview</span></div>
+      <div className="prototype-shell">
+        <aside>
+          <strong>REINYG</strong>
+          <span>Overview</span><span>Workflow</span><span>Records</span><span>Reports</span>
+        </aside>
+        <div className="prototype-main">
+          <div className="prototype-top"><div><small>DASHBOARD</small><b>Operations Overview</b></div><span className="status-pill">Active</span></div>
+          <div className="prototype-kpis"><div/><div/><div/></div>
+          <div className="prototype-content">
+            <div className="prototype-chart"><i/><i/><i/><i/><i/></div>
+            <div className="prototype-list"><span/><span/><span/><span/></div>
+          </div>
+        </div>
+      </div>
+      <small className="prototype-note">Representative interface — no production data shown</small>
+    </div>
+  );
+}
+
 export default function Home(){
   return (
     <main>
@@ -48,25 +137,23 @@ export default function Home(){
 
       <section className="hero" id="top">
         <div className="hero-inner">
-          <div className="hero-photo-wrap">
-            <img className="hero-photo" src="/profile/reinyg-profile.jpg" alt="Professional portrait of Reinniel Exciya Yalong"/>
-            <div className="availability"><i/> Open to future roles & selected projects</div>
-          </div>
+          <DeveloperPanel/>
           <div className="hero-copy">
             <p className="eyebrow">SYSTEMS • AUTOMATION • TECHNOLOGY</p>
             <h1>Reinniel Exciya Yalong</h1>
             <p className="hero-role">Systems Developer & Automation Specialist</p>
-            <p className="hero-intro">I combine business understanding with programming and automation to build practical digital systems that make everyday work simpler, clearer, and more efficient.</p>
+            <p className="hero-intro">I build practical digital systems that simplify workflows, automate repetitive work, and turn business requirements into working technology.</p>
             <div className="code-card" aria-label="Professional profile summary">
               <span className="brace">&#123;</span>
               <div><b>&quot;focus&quot;</b>: <em>&quot;business systems + automation&quot;</em>,</div>
-              <div><b>&quot;build&quot;</b>: <em>&quot;web apps, workflows, data tools&quot;</em>,</div>
+              <div><b>&quot;build&quot;</b>: <em>&quot;web apps, portals, data tools&quot;</em>,</div>
               <div><b>&quot;approach&quot;</b>: <em>&quot;understand → simplify → automate&quot;</em></div>
               <span className="brace">&#125;</span>
             </div>
             <div className="hero-actions">
               <a className="button primary" href="#work">View my work <Arrow/></a>
               <a className="button ghost" href="https://github.com/ReinYG" target="_blank" rel="noreferrer">GitHub <External/></a>
+              <a className="button ghost" href="https://www.linkedin.com/in/reinniel-yalong-696978236/" target="_blank" rel="noreferrer">LinkedIn <External/></a>
             </div>
           </div>
         </div>
@@ -74,23 +161,19 @@ export default function Home(){
 
       <section className="work section" id="work">
         <div className="section-title-row">
-          <div><span className="kicker">PORTFOLIO</span><h2>Selected Work</h2></div>
-          <p>Public descriptions are intentionally generalized. They show the kind of systems I build without exposing confidential business data or internal operational details.</p>
+          <div><span className="kicker">SOFTWARE PORTFOLIO</span><h2>Systems I&apos;ve Developed</h2></div>
+          <p>Each preview is a sanitized prototype created for this public portfolio. It represents the type of system and experience I built without revealing internal screens, private data, clients, or confidential processes.</p>
         </div>
-        <div className="work-list">
-          {work.map((item,index)=>(
-            <article className={`work-row ${index%2===1?"reverse":""}`} key={item.no}>
-              <div className="work-copy">
+
+        <div className="project-grid">
+          {projects.map((item)=>(
+            <article className="project-card" key={item.no}>
+              <Prototype variant={item.variant}/>
+              <div className="project-copy">
                 <span className="work-no">{item.no} / {item.type}</span>
-                <h3>{item.title}</h3><p>{item.description}</p>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
                 <div className="tags">{item.tags.map(tag=><span key={tag}>{tag}</span>)}</div>
-              </div>
-              <div className="mock-window" aria-hidden="true">
-                <div className="mock-bar"><i/><i/><i/><span>reinyg / {item.no}</span></div>
-                <div className="mock-body">
-                  <div className="mock-side"><strong>REINYG</strong><span>Dashboard</span><span>Workflow</span><span>Reports</span></div>
-                  <div className="mock-main"><div className="mock-heading"/><div className="mock-grid"><div/><div/><div/></div><div className="mock-table"><i/><i/><i/><i/></div></div>
-                </div>
               </div>
             </article>
           ))}
@@ -99,13 +182,21 @@ export default function Home(){
 
       <section className="about section" id="about">
         <div className="about-heading">
-          <div><span className="kicker">ABOUT</span><h2>About Me</h2></div><span className="purple-rule"/>
+          <div><span className="kicker">ABOUT</span><h2>Business understanding. Technical execution.</h2></div><span className="purple-rule"/>
         </div>
-        <div className="about-columns">
-          <p>My professional foundation is in <strong>accounting and banking operations</strong>, where I learned the importance of accuracy, controls, structured processes, and reliable data. That experience eventually led me into programming, automation, and systems development.</p>
-          <p>I build technology around <strong>real operational problems</strong>. My work includes internal portals, workflow applications, dashboards, spreadsheet automation, validation tools, database-backed systems, and integrations that reduce repetitive work.</p>
-          <p>I also work extensively with <strong>Infosys Finacle 10.x and 11.x</strong>. I keep banking-specific implementation details private, but the experience gives me a strong understanding of enterprise workflows, testing, controlled transactions, and user-centered process design.</p>
+
+        <div className="about-profile">
+          <div className="about-photo-card">
+            <img src="/profile/reinyg-profile.jpg" alt="Reinniel Exciya Yalong"/>
+            <div><strong>Reinniel Yalong</strong><span>Systems & Automation Developer</span></div>
+          </div>
+          <div className="about-columns">
+            <p>My professional foundation is in <strong>accounting and banking operations</strong>, where I developed a strong appreciation for accuracy, controls, structured processes, and reliable information.</p>
+            <p>I later expanded into <strong>programming and automation</strong>, building portals, workflow applications, dashboards, validation tools, spreadsheet systems, integrations, and database-backed applications around real operational needs.</p>
+            <p>I also work extensively with <strong>Infosys Finacle 10.x and 11.x</strong>. I keep implementation details private, while the experience strengthens my understanding of enterprise workflows, UAT, user support, transaction controls, and process design.</p>
+          </div>
         </div>
+
         <div className="principles">
           <div><span>01</span><strong>Understand</strong><p>Study users, rules, pain points, and exceptions.</p></div>
           <div><span>02</span><strong>Simplify</strong><p>Remove unnecessary steps before automating anything.</p></div>
@@ -117,7 +208,7 @@ export default function Home(){
       <section className="skills section" id="skills">
         <div className="section-title-row">
           <div><span className="kicker">TOOLKIT</span><h2>Skills & Technologies</h2></div>
-          <p>A practical stack for web applications, automation, spreadsheet engineering, databases, integrations, and workflow-oriented systems.</p>
+          <p>A practical stack for web applications, automation, spreadsheet engineering, databases, integrations, enterprise systems, and workflow-oriented development.</p>
         </div>
         <div className="skill-grid">{skills.map((skill)=><div className="skill-card" key={skill.label}><span className="skill-icon"><SkillIcon type={skill.icon}/></span><strong>{skill.label}</strong></div>)}</div>
       </section>
