@@ -111,7 +111,7 @@ function HeroIdentity3D(){
       <div className="identity-orbit orbit-two"/>
 
       <div className="identity-code-layer">
-        <HeroIdentity3D/>
+        <DeveloperPanel/>
       </div>
 
       <div className="identity-photo-card">
@@ -144,7 +144,7 @@ export default function Home(){
 
       <section className="hero" id="top">
         <div className="hero-inner">
-          <DeveloperPanel/>
+          <HeroIdentity3D/>
           <div className="hero-copy">
             <p className="eyebrow">SYSTEMS • AUTOMATION • TECHNOLOGY</p>
             <h1>Reinniel Exciya Yalong</h1>
