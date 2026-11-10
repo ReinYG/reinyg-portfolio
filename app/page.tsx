@@ -98,7 +98,35 @@ function DeveloperPanel(){
         <p className="active"><b>04</b><span>build</span><em>(system)</em><i className="cursor">▍</i></p>
         <p><b>05</b><span>improve</span><em>(experience)</em><i>→</i></p>
       </div>
-      <div className="terminal-status"><span><i/> workflow ready</span><span>v1.3</span></div>
+      <div className="terminal-status"><span><i/> workflow ready</span><span>v1.6</span></div>
+    </div>
+  );
+}
+
+function HeroIdentity3D(){
+  return (
+    <div className="hero-identity-3d" aria-label="Professional profile and development journey">
+      <div className="identity-glow"/>
+      <div className="identity-orbit orbit-one"/>
+      <div className="identity-orbit orbit-two"/>
+
+      <div className="identity-code-layer">
+        <HeroIdentity3D/>
+      </div>
+
+      <div className="identity-photo-card">
+        <div className="identity-photo-frame">
+          <img src="/profile/reinyg-profile-3d.jpg" alt="Reinniel Exciya Yalong"/>
+        </div>
+        <div className="identity-caption">
+          <strong>Reinniel Yalong</strong>
+          <span>Senior Manager · Finacle Officer · AP-Unit Head</span>
+        </div>
+      </div>
+
+      <div className="identity-chip chip-accounting"><span>01</span>Accounting</div>
+      <div className="identity-chip chip-automation"><span>02</span>Automation</div>
+      <div className="identity-chip chip-development"><span>03</span>Development</div>
     </div>
   );
 }
@@ -169,7 +197,7 @@ export default function Home(){
 
         <div className="about-profile">
           <div className="about-photo-card">
-            <img src="/profile/reinyg-profile.jpg" alt="Reinniel Exciya Yalong"/>
+            <img src="/profile/reinyg-profile-3d.jpg" alt="Reinniel Exciya Yalong"/>
             <div><strong>Reinniel Yalong</strong><span>Systems & Automation Developer</span></div>
           </div>
           <div className="about-columns">
