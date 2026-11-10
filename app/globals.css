@@ -53,3 +53,15 @@ footer{min-height:86px;display:grid;grid-template-columns:1fr auto 1fr;align-ite
 @media(max-width:1020px){.hero-identity-3d{order:2;min-height:470px;margin-top:28px}.identity-code-layer{left:5%;width:80%}.identity-photo-card{right:5%;width:60%}}
 @media(max-width:640px){.hero-identity-3d{min-height:410px;width:100%;margin-top:24px}.identity-code-layer{left:0;top:72px;width:88%;transform:translate3d(-22px,12px,-70px) rotateY(12deg) rotateX(2deg)}.identity-photo-card{right:0;top:16px;width:64%;padding:8px;border-radius:20px;transform:translate3d(10px,0,60px) rotateY(-7deg) rotateX(2deg)}.identity-caption{padding:11px 8px 9px}.identity-caption strong{font-size:13px}.identity-caption span{font-size:7px}.identity-chip{min-height:32px;padding:0 9px;font-size:7px}.identity-chip span{width:17px;height:17px}.chip-accounting{left:0;bottom:76px}.chip-automation{left:92px;bottom:25px}.chip-development{right:0;bottom:70px}.orbit-one{width:330px;height:330px;left:0;top:30px}.orbit-two{width:270px;height:270px;left:45px;top:78px}}
 @media(prefers-reduced-motion:reduce){.hero-identity-3d .identity-chip{animation:none!important}.identity-photo-card,.identity-code-layer,.about-photo-card{transition:none!important}}
+
+/* v1.6.1 reliable 3D portrait visibility */
+.hero-identity-3d{position:relative;isolation:isolate;overflow:visible}
+.identity-glow{z-index:0}
+.identity-orbit{z-index:0}
+.identity-code-layer{z-index:1}
+.identity-photo-card{z-index:10;opacity:1!important;visibility:visible!important}
+.identity-photo-frame{position:relative;z-index:11;background:#eef1f5}
+.identity-photo-frame img{position:relative;z-index:12;display:block!important;opacity:1!important;visibility:visible!important;width:100%!important;height:auto;aspect-ratio:1/1;object-fit:cover}
+.identity-caption{position:relative;z-index:13}
+.identity-chip{z-index:20}
+@media(max-width:1020px){.identity-photo-card{z-index:10}}
