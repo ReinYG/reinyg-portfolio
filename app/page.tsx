@@ -98,7 +98,7 @@ function DeveloperPanel(){
         <p className="active"><b>04</b><span>build</span><em>(system)</em><i className="cursor">▍</i></p>
         <p><b>05</b><span>improve</span><em>(experience)</em><i>→</i></p>
       </div>
-      <div className="terminal-status"><span><i/> workflow ready</span><span>v1.6</span></div>
+      <div className="terminal-status"><span><i/> workflow ready</span><span>v1.7</span></div>
     </div>
   );
 }
@@ -116,11 +116,11 @@ function HeroIdentity3D(){
 
       <div className="identity-photo-card">
         <div className="identity-photo-frame">
-          <img src="/profile/reinyg-profile-3d.jpg?v=161" alt="Reinniel Exciya Yalong"/>
+          <img src="/profile/reinniel-yalong-v17.jpg" alt="Reinniel Exciya Yalong"/>
         </div>
         <div className="identity-caption">
           <strong>Reinniel Yalong</strong>
-          <span>Senior Manager · Finacle Officer · AP-Unit Head</span>
+          <span>Senior Manager · Systems Development & Automation</span>
         </div>
       </div>
 
@@ -146,7 +146,7 @@ export default function Home(){
         <div className="hero-inner">
           <HeroIdentity3D/>
           <div className="hero-copy">
-            <p className="eyebrow">SYSTEMS • AUTOMATION • TECHNOLOGY</p>
+            <p className="eyebrow">ACCOUNTING • AUTOMATION • SOFTWARE DEVELOPMENT</p>
             <h1>Reinniel Exciya Yalong</h1>
             <p className="hero-role">Systems Developer & Automation Specialist</p>
             <p className="hero-intro">I build practical digital systems that simplify workflows, automate repetitive work, and turn business requirements into working technology.</p>
@@ -192,18 +192,18 @@ export default function Home(){
 
       <section className="about section" id="about">
         <div className="about-heading">
-          <div><span className="kicker">ABOUT</span><h2>Business understanding. Technical execution.</h2></div><span className="purple-rule"/>
+          <div><span className="kicker">ABOUT</span><h2>Accounting foundation. Audit discipline. Developer mindset.</h2></div><span className="purple-rule"/>
         </div>
 
         <div className="about-profile">
           <div className="about-photo-card">
-            <img src="/profile/reinyg-profile-3d.jpg?v=161" alt="Reinniel Exciya Yalong"/>
-            <div><strong>Reinniel Yalong</strong><span>Systems & Automation Developer</span></div>
+            <img src="/profile/reinniel-yalong-v17.jpg" alt="Reinniel Exciya Yalong"/>
+            <div><strong>Reinniel Yalong</strong><span>Senior Manager · Systems Development & Automation</span></div>
           </div>
           <div className="about-columns">
-            <p>My professional foundation is in <strong>accounting and banking operations</strong>, where I developed a strong appreciation for accuracy, controls, structured processes, and reliable information.</p>
-            <p>I later expanded into <strong>programming and automation</strong>, building portals, workflow applications, dashboards, validation tools, spreadsheet systems, integrations, and database-backed applications around real operational needs.</p>
-            <p>I also work extensively with <strong>Infosys Finacle 10.x and 11.x</strong>. I keep implementation details private, while the experience strengthens my understanding of enterprise workflows, UAT, user support, transaction controls, and process design.</p>
+            <p>My professional foundation spans <strong>accounting, auditing, banking operations, and controllership</strong>, disciplines that shaped how I think about accuracy, controls, evidence, risk, and reliable information.</p>
+            <p>I expanded that foundation into <strong>systems development and automation</strong>, building portals, workflow applications, dashboards, validation tools, spreadsheet systems, integrations, and database-backed applications around real operational needs.</p>
+            <p>I am most effective where <strong>business process and software meet</strong>—translating operational requirements into clear workflows, dependable controls, practical interfaces, and technology that people can actually use.</p>
           </div>
         </div>
 
