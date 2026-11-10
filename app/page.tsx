@@ -116,7 +116,7 @@ function HeroIdentity3D(){
 
       <div className="identity-photo-card">
         <div className="identity-photo-frame">
-          <img src="/profile/reinniel-yalong-v17.jpg" alt="Reinniel Exciya Yalong"/>
+          <img src="/profile/reinniel-yalong-v17.webp" alt="Reinniel Exciya Yalong"/>
         </div>
         <div className="identity-caption">
           <strong>Reinniel Yalong</strong>
@@ -197,7 +197,7 @@ export default function Home(){
 
         <div className="about-profile">
           <div className="about-photo-card">
-            <img src="/profile/reinniel-yalong-v17.jpg" alt="Reinniel Exciya Yalong"/>
+            <img src="/profile/reinniel-yalong-v17.webp" alt="Reinniel Exciya Yalong"/>
             <div><strong>Reinniel Yalong</strong><span>Senior Manager · Systems Development & Automation</span></div>
           </div>
           <div className="about-columns">
