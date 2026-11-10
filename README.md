@@ -3,10 +3,10 @@
 Personal portfolio website for **Reinniel Exciya Yalong**.
 
 ## Version
-**v1.6 — 3D professional identity & portfolio presentation**
+**v1.7 — Professional developer portfolio polish**
 
 ## Direction
-The homepage now combines a professional portrait with the developer workflow visual through a layered 3D identity composition. The photo is presented as part of the systems/automation story rather than as a traditional résumé portrait, while the software portfolio and case studies remain the main proof of work.
+The homepage uses a high-resolution professional portrait with a restrained 3D developer composition. Public positioning now emphasizes the progression from accounting and auditing into automation and systems development, while software case studies remain the primary proof of work.
 
 ## Public software portfolio
 - Accounting Operations Portal
@@ -34,3 +34,12 @@ Run `npm install`, then `npm run dev -- -p 3001`.
 
 ## Deployment
 The GitHub repository is connected to Vercel. Pushing to `main` triggers a production deployment.
+
+
+## v1.7 refinements
+- Replaced the low-resolution portrait with a higher-resolution professional headshot.
+- Simplified the 3D hero for a cleaner developer/editorial feel.
+- Public role presentation uses **Senior Manager · Systems Development & Automation**.
+- Removed Finacle Officer and AP-Unit Head from the public hero presentation.
+- Broadened About content around accounting, auditing, business process, software development, and automation.
+- Updated public metadata and canonical URL to https://reinyg-dev.vercel.app.
