@@ -3,10 +3,10 @@
 Personal portfolio website for **Reinniel Exciya Yalong**.
 
 ## Version
-**v1.5 — Distinct software prototypes & deeper case studies**
+**v1.6 — 3D professional identity & portfolio presentation**
 
 ## Direction
-The homepage now leads with a developer workflow visual instead of a portrait. The professional photo has been moved to the About section, while the main portfolio emphasizes systems development and automation.
+The homepage now combines a professional portrait with the developer workflow visual through a layered 3D identity composition. The photo is presented as part of the systems/automation story rather than as a traditional résumé portrait, while the software portfolio and case studies remain the main proof of work.
 
 ## Public software portfolio
 - Accounting Operations Portal
